@@ -1,4 +1,3 @@
-require('dotenv').config();
 console.log("cart script is running");
 var total = 0;
 
@@ -212,7 +211,7 @@ async function loadCart() {
                     let userId = res[0]._id;
                     // console.log("userId in add to cart :", userId);
 
-                    let out = await fetch(process.env.BASE_URL + `/login/updateCart/${userId}`, {
+                    let out = await fetch(`https://udemy-backend-8qgk.onrender.com/login/updateCart/${userId}`, {
                         method: "DELETE",
                         headers: { "Content-type": "application/json" },
                         body: JSON.stringify({

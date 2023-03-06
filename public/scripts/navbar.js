@@ -2593,7 +2593,7 @@ var timerId;
 async function searchMovies(course_name) {
     try {
 
-        let res = await fetch(`https://aqueous-fortress-78543.herokuapp.com/api/${course_name}`);
+        let res = await fetch(`https://udemy-backend-8qgk.onrender.com/api/${course_name}`);
 
         let data = await res.json();
         console.log("Data:--", data);

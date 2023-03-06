@@ -1,5 +1,4 @@
 console.log("checkout.js file is running");
-
 async function makePayment() {
 
   const cardName = document.getElementById("card_name").value;

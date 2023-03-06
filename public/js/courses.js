@@ -1,10 +1,9 @@
 // let course_datas = JSON.parse(localStorage.getItem("searchData"));
-require('dotenv').config();
 
 
 async function getData(course) {
     course.toLowerCase();
-    let res = await fetch(process.env.BASE_URL +"/"+course);
+    let res = await fetch(`https://udemy-backend-8qgk.onrender.com/api/${course}`);
     let data = await res.json();
     add(data);
 }
